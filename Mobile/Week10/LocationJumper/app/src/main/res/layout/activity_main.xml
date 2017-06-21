@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="bit.tuckmn1.locationjumper.MainActivity"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
+
+    <Button
+        android:id="@+id/btnTeleport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        android:layout_marginStart="30dp"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginTop="30dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/latitudeID"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:text="Latitude"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginStart="30dp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/longitudeID"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/btnTeleport"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="19dp"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <TextView
+        android:id="@+id/longitudeID"
+        android:layout_width="0dp"
+        android:layout_height="27dp"
+        android:text="Longitude"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginStart="30dp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginEnd="23dp"
+        app:layout_constraintRight_toRightOf="@+id/ClosestCityID"
+        android:layout_marginTop="149dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/latNumberID"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:text="0.00"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/longNumberID"
+        app:layout_constraintRight_toRightOf="@+id/longNumberID"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/btnTeleport"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="21dp"
+        app:layout_constraintLeft_toLeftOf="@+id/CityNameID"/>
+
+    <TextView
+        android:id="@+id/longNumberID"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="0.00"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="@+id/longitudeID"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintTop_toTopOf="@+id/longitudeID"
+        app:layout_constraintLeft_toRightOf="@+id/ClosestCityID"/>
+
+    <TextView
+        android:id="@+id/ClosestCityID"
+        android:layout_width="0dp"
+        android:layout_height="31dp"
+        android:text="Closest City:"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginEnd="17dp"
+        app:layout_constraintRight_toLeftOf="@+id/CityNameID"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/CityNameID"
+        tools:layout_constraintBaseline_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/cityImageView"/>
+
+    <TextView
+        android:id="@+id/CityNameID"
+        android:layout_width="122dp"
+        android:layout_height="31dp"
+        android:text=""
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginEnd="88dp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/cityImageView"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/longNumberID"
+        android:layout_marginRight="88dp"/>
+
+    <ImageView
+        android:id="@+id/cityImageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:srcCompat="@mipmap/ic_launcher"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="14dp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="18dp"
+        app:layout_constraintTop_toBottomOf="@+id/ClosestCityID"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="18dp"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+</android.support.constraint.ConstraintLayout>

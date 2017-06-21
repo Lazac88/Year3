@@ -1,0 +1,7 @@
+#Fri Mar 24 17:29:47 NZDT 2017
+base.0=H\:\\Year3\\Mobile\\IN721tuckmn1\\Week6\\WelcomeToDunedin2\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_a7efc1f2cd6e50e7578708eb36e91d5deae42583
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=H\:\\Year3\\Mobile\\IN721tuckmn1\\Week6\\WelcomeToDunedin2\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_cf60962f7dc269c9763e185499946b7a26cfadb8\\classes.dex
+base.1=H\:\\Year3\\Mobile\\IN721tuckmn1\\Week6\\WelcomeToDunedin2\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_cf60962f7dc269c9763e185499946b7a26cfadb8
+file.0=H\:\\Year3\\Mobile\\IN721tuckmn1\\Week6\\WelcomeToDunedin2\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_a7efc1f2cd6e50e7578708eb36e91d5deae42583\\classes.dex

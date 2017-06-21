@@ -1,0 +1,24 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context="bit.tuckmn1.kennelclub.DogListFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:textSize="30dp"
+        android:text="PlaceHolder"
+        android:id="@+id/dogTypeTextTitle"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/dogTypeTextTitle"
+        android:layout_marginTop="12dp"
+        android:id="@+id/dogTypes"/>
+
+
+</RelativeLayout>

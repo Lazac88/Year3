@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">RequestingData</string>
+    <string name="hobbit_string">In a hole in the ground there lived a hobbit. Not a nasty, dirsty, wet hole...</string>
+    <string name="change_string">The colour of this text must change. The colour of this text must change. The colour of this text must change. The colour of this text must change. </string>
+</resources>

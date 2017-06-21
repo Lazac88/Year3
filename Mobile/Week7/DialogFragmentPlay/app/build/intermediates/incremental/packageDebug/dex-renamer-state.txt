@@ -1,0 +1,7 @@
+#Wed Mar 29 16:32:20 NZDT 2017
+base.0=H\:\\Year3\\Mobile\\IN721tuckmn1\\Week7\\DialogFragmentPlay\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_3bb860635d9b6b3858a0dd79581caa1e78bfa6db
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=H\:\\Year3\\Mobile\\IN721tuckmn1\\Week7\\DialogFragmentPlay\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_41d06f37cf03a6596107fb03f86ffd295558e540\\classes.dex
+base.1=H\:\\Year3\\Mobile\\IN721tuckmn1\\Week7\\DialogFragmentPlay\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_41d06f37cf03a6596107fb03f86ffd295558e540
+file.0=H\:\\Year3\\Mobile\\IN721tuckmn1\\Week7\\DialogFragmentPlay\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_3bb860635d9b6b3858a0dd79581caa1e78bfa6db\\classes.dex

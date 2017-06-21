@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instant-run
+    abi="x86"
+    api-level="24"
+    density="xhdpi"
+    format="8"
+    plugin-version="2.2.3"
+    timestamp="19348170109826"
+    token="8426611608637751376"
+    verifier="FULL_BUILD_REQUESTED" >
+
+    <task
+        name="javac"
+        duration="93681" />
+    <task
+        name="instant-run-dex"
+        duration="0" />
+    <task
+        name="instant-run-transform"
+        duration="9620" />
+    <task
+        name="verifier"
+        duration="7524" />
+
+    <artifact
+        location="H:\Year3\Mobile\IN721tuckmn1\Week6\WelcomeToDunedin2\app\build\outputs\apk\app-debug.apk"
+        type="MAIN" />
+
+    <build
+        timestamp="19348170109826"
+        verifier="FULL_BUILD_REQUESTED" >
+        <artifact
+            location="H:\Year3\Mobile\IN721tuckmn1\Week6\WelcomeToDunedin2\app\build\outputs\apk\app-debug.apk"
+            type="MAIN" />
+    </build>
+
+</instant-run>

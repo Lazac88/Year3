@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="bit.tuckmn1.camerademo.MainActivity"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
+
+    <TextView
+        android:layout_width="202dp"
+        android:layout_height="39dp"
+        android:text="Image Panorama"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:id="@+id/imgPanoLbl"
+        tools:layout_editor_absoluteY="16dp"
+        tools:layout_editor_absoluteX="91dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="41dp"/>
+
+    <ImageView
+        android:id="@+id/iv1"
+        android:layout_width="167dp"
+        android:layout_height="155dp"
+        app:srcCompat="@drawable/piggy"
+        tools:layout_editor_absoluteY="81dp"
+        tools:layout_editor_absoluteX="16dp"
+        android:layout_alignTop="@+id/iv2"
+        android:layout_alignStart="@+id/iv3"/>
+
+    <ImageView
+        android:id="@+id/iv2"
+        android:layout_width="167dp"
+        android:layout_height="155dp"
+        app:srcCompat="@drawable/piggy"
+        tools:layout_editor_absoluteX="201dp"
+        tools:layout_editor_absoluteY="81dp"
+        android:layout_above="@+id/iv4"
+        android:layout_alignStart="@+id/iv4"
+        android:layout_marginBottom="10dp"/>
+
+    <ImageView
+        android:id="@+id/iv3"
+        android:layout_width="167dp"
+        android:layout_height="155dp"
+        app:srcCompat="@drawable/piggy"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="256dp"
+        android:layout_alignTop="@+id/iv4"
+        android:layout_toStartOf="@+id/iv4"
+        android:layout_marginEnd="16dp"/>
+
+    <ImageView
+        android:id="@+id/iv4"
+        android:layout_width="167dp"
+        android:layout_height="155dp"
+        app:srcCompat="@drawable/piggy"
+        tools:layout_editor_absoluteX="201dp"
+        tools:layout_editor_absoluteY="256dp"
+        android:layout_above="@+id/btnTakePicture"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="20dp"/>
+
+    <Button
+        android:id="@+id/btnTakePicture"
+        android:layout_width="181dp"
+        android:layout_height="63dp"
+        android:text="Take Picture"
+        tools:layout_editor_absoluteY="432dp"
+        tools:layout_editor_absoluteX="102dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="12dp"/>
+
+</RelativeLayout>

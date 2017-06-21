@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="250dp">
+
+    <TextView
+        android:text="Confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:id="@+id/textViewPizzaConfirm"
+        android:layout_marginTop="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnConfirm"
+        android:layout_marginStart="13dp"
+        android:layout_alignBaseline="@+id/btnDecline"
+        android:layout_alignBottom="@+id/btnDecline"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="Decline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnDecline"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="36dp"
+        android:layout_below="@+id/textViewPizzaConfirm"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

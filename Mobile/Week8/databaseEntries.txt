@@ -1,0 +1,6 @@
+null, 'Amsterdam', 'The Netherlands'
+null, 'Berlin', 'Germany'
+null, 'Cairo', 'Egypt'
+null, 'Dunedin', 'New Zealand'
+null, 'Christchurch', 'New Zealand'
+null, 'Wellington' New Zealand' 

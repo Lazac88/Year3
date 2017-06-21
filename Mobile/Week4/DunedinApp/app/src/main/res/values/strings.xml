@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">DunedinApp</string>
+    <string name="DunedinGuide">Dunedin Guide</string>
+    <string name="DunedinActivities">Dunedin Activities</string>
+    <string name="DunedinShopping">Dunedin Shopping</string>
+    <string name="DunedinDining">Dunedin Dining</string>
+    <string name="DunedinServices">Dunedin Services</string>
+</resources>
