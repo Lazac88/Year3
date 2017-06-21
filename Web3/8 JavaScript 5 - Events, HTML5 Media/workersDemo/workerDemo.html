@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>JavaScript Workers Demo</title>
+		<script src="worker.js"> </script>
+	</head>
+	<body>
+	<a href=""> I am a link. Check whether you can interact with me during heavy computation</a> 
+	<br/>
+	Number of computations to carry out:
+	<select id="val" name="numberOfComputationalCycles">
+		  <option value="1000">1000</option>
+		  <option value="2000">2000</option>
+		  <option value="5000">5000</option>
+		  <option value="10000">10000</option>
+	</select>
+	<br/>
+	<script>
+	
+	function doHeavyComputationWithWorkers(){
+		var numberOfComputationalCycles = document.getElementById("val").value;
+		console.log("Carrying out " + numberOfComputationalCycles + " computational cycles with workers");
+		console.log("Notice that during the computation you can interact with elements in the page")
+		var squareWorker = new Worker("./worker.js");
+		squareWorker.addEventListener("message", function(event) {
+		  console.log("The worker responded:", event.data);
+		});
+		squareWorker.postMessage(numberOfComputationalCycles);
+		};
+		
+	function doHeavyComputationWithoutWorkers(){
+		var numberOfComputationalCycles = document.getElementById("val").value;
+		console.log("Carrying out " + numberOfComputationalCycles + " computational cycles without workers");
+		console.log("Notice that during the computation you cannot interact with elements in the page")
+		doHeavyComputation(numberOfComputationalCycles);
+		console.log("I'm Done!")
+	};
+	</script>
+	<input type="button" value="Heavy computation with workers" onclick=doHeavyComputationWithWorkers();>
+	<input type="button" value="Heavy computation without workers" onclick=doHeavyComputationWithoutWorkers();>
+	</body>
+</html>

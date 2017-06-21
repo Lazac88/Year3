@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<link rel="stylesheet" type="text/css" href="p3.css" />
+	<title>DOM</title>
+	<script>
+		function changeTheList()
+		{
+			var myList = document.getElementById("ulAnimals");
+			myList.style.backgroundColor = "orange";
+			myList.style.borderWidth = "100px";
+			myList.style.border = "2px solid black";
+
+			myList.className = "orangeBorder";
+		}
+	</script>
+</head>
+
+<body>
+	
+	<ul id="ulAnimals">
+		<li>Antelope</li>
+		<li>Buffalo</li>
+		<li>Crocodile</li>
+	</ul>
+	
+
+	<p>
+	<input type="button" id="btnCSSDemo" onclick="changeTheList();" value="Change the List"/>
+	</p>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,31 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/Content/css/style.css" rel="stylesheet" />
+    <title>ChoosePicture</title>
+</head>
+<body>
+    <div>
+        <form action="ChooseGreeting" method="post">
+            <img src="~/Content/GreetingCardPics/kitten.jpg" />
+            <input type="radio" name="ChosenPicture" value="kitten.jpg" />
+            <img src="~/Content/GreetingCardPics/puppy.jpg" />
+            <input type="radio" name="ChosenPicture" value="puppy.jpg" />
+            <img src="~/Content/GreetingCardPics/fox.jpg" />
+            <input type="radio" name="ChosenPicture" value="fox.jpg" />
+            <img src="~/Content/GreetingCardPics/turtle.jpg" />
+            <input type="radio" name="ChosenPicture" value="turtle.jpg" />
+            <br />
+            <br />
+            <button type="submit">Choose Picture</button>
+        </form>
+</div>
+</body>
+</html>

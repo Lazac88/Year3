@@ -1,0 +1,42 @@
+﻿@model QuizWebApplication.Models.ScoreViewModel
+@using QuizWebApplication.Models;
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/Content/StyleSheets/QuizStyle.css" rel="stylesheet" />
+    <title>Index</title>
+</head>
+<body>
+    <div class="container">
+        <div class="quizHead">
+            <h1 class="title">QUIZ TIME</h1>
+        </div>
+        <div class="centerDiv">
+            <h1 class="title">Monthly Average Highscores</h1>
+            <table>
+                <tr>
+                    <!--<th>Player ID</th>-->
+                    <th>Player Name</th>
+                    <th>Average Score</th>
+                    <!--<th>Score Date</th>-->
+                </tr>
+                @foreach (Score s in Model.DisplayScores)
+                {
+                    <tr>
+                        <td>@s.PlayerName</td>
+                        <td>@s.AverageScore</td>
+                    </tr>
+                }
+            </table>
+            <input class="btnSpacingQuestion" type="button" value="Home" onclick="location.href='@Url.Action("Index", "Quiz" )'" />
+        </div>        
+    </div>
+</body>
+</html>

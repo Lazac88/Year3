@@ -1,0 +1,63 @@
+﻿@model DogMatcher.Models.Dog
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/Content/StyleSheets/DogResultStyle.css" rel="stylesheet" />
+    <title>DogResults</title>
+</head>
+<body>
+    <div>
+        <h1>Our Recommendations</h1>
+        <h2>We suggest the @Model.DisplayName</h2>
+
+        <div id="dogImage">
+            <img src="~/Content/DogImages/@Model.ImageName"/>
+        </div>
+        <div id="dogInfoTable">
+            <table>
+                <tr>
+                    <td>Activity Level:</td>
+                    <td>@Model.ActivityLevel</td>
+                </tr>
+                <tr>
+                    <td>Shedding Level:</td>
+                    <td>@Model.SheddingLevel</td>
+                </tr>
+                <tr>
+                    <td>Grooming Level:</td>
+                    <td>@Model.GroomingLevel</td>
+                </tr>
+                <tr>
+                    <td>Intelligence Level:</td>
+                    <td>@Model.IntelligenceLevel</td>
+                </tr>
+                <tr>
+                    <td>Good With Children:</td>
+                    <td>@Model.GoodWithChildren</td>
+                </tr>
+                <tr>
+                    <td>Slobbers:</td>
+                    <td>@Model.Drools</td>
+                </tr>
+                <tr>
+                    <td>Coat Length:</td>
+                    <td>@Model.Coatlength</td>
+                </tr>
+                <tr>
+                    <td>Size:</td>
+                    <td>@Model.Size</td>
+                </tr>
+            </table>
+        </div>
+        <div id="clear"></div>
+        <button id="btnFindDog" type="button" onclick="location.href='@Url.Action("FindDogCore", "DogFinder")'">Find Another Dog</button>
+</div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+#kf2
+{
+	background-color: green;
+	width: 20px;
+	height: 20px;
+	margin: 50px;
+	padding: 10px;
+	position: absolute;
+}
+
+@keyframes slide
+{
+	0%
+	{
+		left: 0px;
+		top: 0px;
+	}
+	
+	50%
+	{
+		left: 244px;
+		top: 100px;
+	}
+	
+	100%
+	{
+		left: 488px;
+		top: 0px;
+	}
+}
+
+#kf2:active
+{
+	animation: slide 2s linear;
+}

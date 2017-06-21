@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>DOM</title>
+		<link rel="stylesheet" href="">
+	</head>
+
+	<body>
+		
+		<div id="divDisplay">
+			This content is about to change using javascript!
+		</div>
+		
+		<script>
+			var number = prompt("Enter a number");
+			var output = "";
+			for(var i = number; i > 0; i--)
+			{
+				output += i + " ";
+			}
+			var divDisplay = document.getElementById("divDisplay");
+			divDisplay.innerHTML = "<h1>" + output + "</h1>";
+
+		</script>
+
+		</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

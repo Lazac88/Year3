@@ -1,0 +1,39 @@
+﻿@model Tuple<Question, Result>
+@using QuizWebApplication.Models;
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/Content/StyleSheets/QuizStyle.css" rel="stylesheet" />
+    <title>Question Page</title>
+</head>
+<body>
+    <div class="container">
+        <div class="quizHeadQuestion">
+            <h1 class="titleQuestion">QUIZ TIME</h1>
+        </div>
+        <div class="centerDivQuestion">
+            <h2 class="basicSpacing">Category: @Model.Item1.Category</h2>
+            <h2 class="basicSpacing">Difficulty: @Model.Item1.Difficulty</h2>
+            <h2 class="basicSpacing">Question @Model.Item2.QuestionNumber: @Model.Item1.QuestionText</h2>
+            @using (Html.BeginForm("ContinueQuiz", "Quiz"))
+            {
+                <fieldset>
+                    <legend>Please Select An Answer:</legend>
+                    @foreach (string s in Model.Item1.AllAnswers)
+                {
+                        <label>@Html.RadioButton("PlayerAnswer", s)@s</label><br />
+                    }
+                </fieldset>
+                <input class="btnSpacingQuestion" type="submit" value="Submit Answer" />
+            } 
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+﻿@model QuizWebApplication.Models.User
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/Content/StyleSheets/QuizStyle.css" rel="stylesheet" />
+    <title>Home</title>
+</head>
+<body>
+    <div class="container">
+        <div class="quizHead">
+            <h1 class="title">QUIZ TIME</h1>
+        </div>
+        <div class="centerDiv">
+            <header>
+                <div id="welcome"><h4>Welcome @Model.Name <a href='@Url.Action("Logout", "Quiz" )' >(Logout)</a></h4></div>
+                <div class="clearDiv"></div>
+            </header>
+            <div>
+                <h1 class="basicSpacing">Home</h1>
+                <h2 class="basicSpacing">Please Select A Button Below:</h2>
+
+                <input class="btnSpacing" type="button" value="StartQuiz" onclick="location.href='@Url.Action("StartQuiz", "Quiz" ) '" />
+                <input class="btnSpacing" type="button" value="HighScores" onclick="location.href='@Url.Action("Index", "HighScore" ) '" />
+
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

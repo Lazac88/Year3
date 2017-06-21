@@ -1,0 +1,25 @@
+﻿@model WeatherFinder2.Models.CityWeatherViewModel
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>WeatherResult</title>
+</head>
+<body>
+    <div>
+        <h1>The weather in @Model.CityName is @Model.Weather</h1>
+        <h1>Description: @Model.Description</h1>
+        <h1>Population: @Model.Population</h1>
+
+        <form asp-controller="Weather" asp-action="Index" method="get">
+            <button type="submit">Look at another city</button>
+        </form>
+</div>
+</body>
+</html>

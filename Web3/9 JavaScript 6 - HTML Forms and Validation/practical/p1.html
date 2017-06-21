@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title></title>
+	<link rel="stylesheet" href="p1.css">
+</head>
+<body>
+	<form novalidate>
+	  <p>
+		<label for="mail">
+		  <span>enter an email address:</span>
+		  <input type="email" id="mail" name="mail">
+		  <span class="feedback"></span>
+		</label>
+	  <p>
+	  <button name="submit">Submit</button>
+	</form>
+	
+</body>
+<script>
+	var form = document.querySelector("form");
+	
+	form.addEventListener("submit", function(event) {
+		var email = document.querySelector("#mail");
+		if(email.validity.valid !== true)
+		{
+			var mySpan = document.querySelector(".feedback");
+			mySpan.textContent ="Please Enter a Valid Email";
+		}
+		else
+		{
+			mySpan.textContent = "";
+		}
+		event.preventDefault();
+	})
+</script>
+</html>

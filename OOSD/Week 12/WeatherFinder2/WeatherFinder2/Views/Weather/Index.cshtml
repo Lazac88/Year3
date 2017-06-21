@@ -1,0 +1,32 @@
+﻿@model WeatherFinder2.Models.CountryCodeViewModel
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <h1>Weather Finder App</h1>
+    <div> 
+        
+
+        <form asp-controller="Weather" asp-action="Index" method="post">
+            <label>
+                Please Choose A Country Code:
+            </label>
+            <br />
+            <br />
+            @Html.DropDownList("CODE", Model.CountryCodes, "Country Code")
+            <br />
+            <br />
+            <button type="submit">Find Weather</button>
+        </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,90 @@
+﻿@model DogMatcher.Models.Dog
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/Content/StyleSheets/DogInputStyle.css" rel="stylesheet" />
+    <title>FindDog</title>
+</head>
+<body>
+    <div> 
+        <h2>Welcome to the IN710 Dog Selector</h2>
+        <h2>We'll Help You Choose the Perfect Dog</h2>
+
+        
+
+        <form action="FindDog" method="post">
+            <fieldset>
+                <legend>Preferences</legend>
+
+                <label>Must be good with children:</label><br />
+                <input type="radio" name="GoodWithChildren" value=true>Yes<br />
+                <input type="radio" name="GoodWithChildren" value=false> No<br />
+
+                <label>Drooling:</label><br />
+                <input type="radio" name="Drools" value=true>Don't Mind<br />
+                <input type="radio" name="Drools" value=false>No Slobbering!<br />
+
+                <label>Coat Length:</label><br />
+                <input type="radio" name="Coatlength" value=true>Short<br />
+                <input type="radio" name="Coatlength" value=false>Medium<br />
+                <input type="radio" name="Coatlength" value=false>Long<br />
+
+                <label>Preferences:</label><br />
+                <table>
+                    <tr>
+                        <th></th>
+                        <th>Low</th>
+                        <th>Medium</th>
+                        <th>High</th>
+                        <th>No Preference</th>
+                    </tr>
+                    <tr>
+                        <td>Activity Level</td>
+                        <td><input type="radio" name="ActivityLevel" value="@EScale.Low" /></td>
+                        <td><input type="radio" name="ActivityLevel" value="@EScale.Medium" /></td>
+                        <td><input type="radio" name="ActivityLevel" value="@EScale.High" /></td>
+                        <td><input type="radio" name="ActivityLevel" value="@EScale.NoPreference" /></td>
+                    </tr>
+                    <tr>
+                        <td>Shedding Level</td>
+                        <td><input type="radio" name="SheddingLevel" value="@EScale.Low" /></td>
+                        <td><input type="radio" name="SheddingLevel" value="@EScale.Medium" /></td>
+                        <td><input type="radio" name="SheddingLevel" value="@EScale.High" /></td>
+                        <td><input type="radio" name="SheddingLevel" value="@EScale.NoPreference" /></td>
+                    </tr>
+                    <tr>
+                        <td>Grooming Level</td>
+                        <td><input type="radio" name="GroomingLevel" value="@EScale.Low" /></td>
+                        <td><input type="radio" name="GroomingLevel" value="@EScale.Medium" /></td>
+                        <td><input type="radio" name="GroomingLevel" value="@EScale.High" /></td>
+                        <td><input type="radio" name="GroomingLevel" value="@EScale.NoPreference" /></td>
+                    </tr>
+                    <tr>
+                        <td>Intelligence Level</td>
+                        <td><input type="radio" name="IntelligenceLevel" value="@EScale.Low" /></td>
+                        <td><input type="radio" name="IntelligenceLevel" value="@EScale.Medium" /></td>
+                        <td><input type="radio" name="IntelligenceLevel" value="@EScale.High" /></td>
+                        <td><input type="radio" name="IntelligenceLevel" value="@EScale.NoPreference" /></td>
+                    </tr>                    
+                </table>
+                <br />
+                <br />
+                <label>
+                    Preferred Size:
+                    @Html.EnumDropDownListFor(x => x.Size, "Preferred Size:", new { @class = "form-control" })
+                </label>
+                <br />
+                <br />
+                <button type="submit">Find Dog</button>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,136 @@
+﻿.centerDiv
+{
+    width: 400px;
+    margin: 0 auto;
+    background-color:#D3D3D3;
+}
+
+.centerDivQuestion
+{
+    width: 800px;
+    margin: 0 auto;
+    background-color:#D3D3D3;
+}
+
+.quizHead
+{
+    width: 400px;
+    margin: 0 auto;
+    background-color: forestgreen;
+}
+
+.quizHeadQuestion
+{
+    width: 800px;
+    margin: 0 auto;
+    background-color: forestgreen;
+}
+
+.title
+{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 100px
+}
+
+.titleQuestion
+{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 300px
+}
+
+
+.centerTitle
+{
+    margin: 0 auto;
+    padding-top: 10px;
+    background-color:#D3D3D3;
+    width: 35%;
+}
+
+.btnLogin
+{
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+.centerDiv fieldset editor-field
+{
+    margin: 0 auto;
+}
+
+.linkRegister
+{
+    font-size: 20px;
+    margin-left: 20px;
+    padding-bottom: 20px;
+}
+
+.editor-label
+{
+    font-size: 25px;
+    padding-left: 20px;
+}
+
+.editor-field
+{
+    font-size: 25px;
+    margin-left: 20px;
+}
+
+.clearDiv
+{
+    clear: both;
+    height: 0px;
+    padding: 0px;
+    margin: 0px;
+}
+
+header
+{
+    height: 10px;
+}
+
+#welcome
+{
+    color: blue;
+    float: right;
+    padding: 5px;
+    margin: 0px;
+}
+
+.basicSpacing
+{
+    padding-left:20px;
+}
+
+.btnSpacing
+{
+    margin-left: 20px;
+    margin-bottom: 20px;
+    font-size:25px;
+}
+
+.btnSpacingQuestion
+{
+    margin-top:20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    font-size:25px;
+}
+
+.container
+{
+    background-image: url(../Images/questionmark.jpeg);
+    background-size:cover;
+    height: 900px;
+}
+
+table, tr, th, td
+{
+    border: solid black 1px;
+    font-size:30px;
+    width: 100%;
+    margin-top: 20px;
+}

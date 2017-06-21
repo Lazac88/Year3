@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title>DOM</title>
+	<script>
+		function displayObjectInTable(match)
+		{
+			var newTable = document.createElement("table");
+
+			for(k in match)
+			{
+				var newRow = document.createElement('tr');
+				var keyTD = document.createElement('td');
+				var keyText = document.createTextNode(k);
+				keyTD.appendChild(keyText);
+
+				var valueTD = document.createElement('td');
+				var valueText = document.createTextNode(match[k]);
+				valueTD.appendChild(valueText);
+
+				newRow.appendChild(keyTD);
+				newRow.appendChild(valueTD);
+				newTable.appendChild(newRow);
+
+			}
+			return newTable;
+			
+		}
+
+		
+		function objectDemo()
+		{
+			var match =
+			{
+				team1: "ABs",
+				team2: "Boks",
+				score1: 105,
+				score2: 0
+			}
+			var myTable = displayObjectInTable(match);
+			var tableDiv = document.getElementById("table");
+			tableDiv.appendChild(myTable);
+		}
+
+	</script>
+</head>
+
+<body>
+
+
+	<p>
+		<input type="button" onclick="objectDemo();" value="Test" id="btnTest"/>
+	</p>
+	<div id="table"></div>
+</body>
+
+</html>

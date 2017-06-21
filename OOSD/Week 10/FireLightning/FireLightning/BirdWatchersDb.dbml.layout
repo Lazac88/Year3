@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="BirdWatchersDb">
+  <DataContextMoniker Name="/BirdWatchersDbDataContext" />
+  <nestedChildShapes>
+    <classShape Id="771e9548-7c03-4edc-b4fb-356a5f743575" absoluteBounds="7, 1.75, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/BirdWatchersDbDataContext/tblFire" />
+      <nestedChildShapes>
+        <elementListCompartment Id="be3e574e-2663-4529-8c3e-612c2e5ca76a" absoluteBounds="7.015, 2.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f91032a3-b89d-4b46-b87a-43351877f086" absoluteBounds="3, 1.875, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/BirdWatchersDbDataContext/tblPicture" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7d9e7d98-13c1-4faf-bd86-ef48eb59d092" absoluteBounds="3.0149999999999997, 2.335, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="03ea4a25-15c1-4e44-804f-06d2e5e7ee9e" absoluteBounds="5.25, 4.125, 2, 1.9631982421875">
+      <DataClassMoniker Name="/BirdWatchersDbDataContext/tblStrike" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5dabd6b1-19f0-4046-b9aa-5020e33addaf" absoluteBounds="5.265, 4.585, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.25 : 5.10659912109375); (4 : 5.10659912109375); (4 : 3.45359537760417)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BirdWatchersDbDataContext/tblStrike/tblStrike_tblPicture" />
+      <nodes>
+        <classShapeMoniker Id="03ea4a25-15c1-4e44-804f-06d2e5e7ee9e" />
+        <classShapeMoniker Id="f91032a3-b89d-4b46-b87a-43351877f086" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

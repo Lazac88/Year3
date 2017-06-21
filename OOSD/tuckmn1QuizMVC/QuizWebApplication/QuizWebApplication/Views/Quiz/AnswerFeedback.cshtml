@@ -1,0 +1,32 @@
+﻿@model QuizWebApplication.Models.Result
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/Content/StyleSheets/QuizStyle.css" rel="stylesheet" />
+    <title>AnswerFeedback</title>
+</head>
+<body>
+    <div class="container">
+        <div class="quizHead">
+            <h1 class="title">QUIZ TIME</h1>
+        </div>
+        <div class="centerDiv">
+            <h1 class="basicSpacing">@Model.Feedback</h1>
+            <br />
+            <h3 class="basicSpacing">You Answered: @Model.PlayerAnswer</h3>
+            <h3 class="basicSpacing">Actual Answer: @Model.ActualAnswer</h3>
+            <br />
+            <input class="btnSpacing" type="button" value="Continue" onclick="location.href='@Url.Action("NextQuestion", "Quiz" )'" />
+        </div>
+        
+
+    </div>
+</body>
+</html>

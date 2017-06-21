@@ -1,0 +1,33 @@
+﻿@model QuizWebApplication.Models.EndResult
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/Content/StyleSheets/QuizStyle.css" rel="stylesheet" />
+    <title>DisplayResults</title>
+</head>
+<body>
+    <div class="container">
+        <div class="quizHead">
+            <h1 class="title">QUIZ TIME</h1>
+        </div>
+        <div class="centerDiv">
+            <fieldset>
+                <legend>Final Score</legend>
+                <h1 class="basicSpacing">You Scored @Model.FinalScore out of 10</h1>
+                <h1 class="basicSpacing">Feedback: @Model.Feedback</h1>
+            </fieldset>
+            <br />
+            <input class="btnSpacing" type="button" value="Home" onclick="location.href='@Url.Action("Index", "Quiz" )'" />
+            <input class="btnSpacing" type="button" value="View High Scores" onclick="location.href='@Url.Action("Index", "HighScore" )'" />
+        </div>
+        
+    </div>
+</body>
+</html>
